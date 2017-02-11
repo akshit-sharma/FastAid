@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startLogInActivity(view);
                 Snackbar.make(view, "Processing... Please wait!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
@@ -38,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+    public void startLogInActivity(View view) {
+        Intent myIntent = new Intent(this, LoginActivity.class);
+        startActivity(myIntent);
     }
     public void startgpsservice(View view) {
         Intent myIntent = new Intent(this, NewActivity.class);

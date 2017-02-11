@@ -20,11 +20,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".NewActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AmbulanceActivity" />
+        <activity android:name=".DoctorActivity" />
+        <activity android:name=".VolunteerActivity" />
 
         <service
             android:name=".GPSTracker"
             android:enabled="true"
             android:exported="true"></service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDuENDLfK3qk8MY5pj6FYGJb-AlyuQWycM" />
+
     </application>
 
 </manifest>
